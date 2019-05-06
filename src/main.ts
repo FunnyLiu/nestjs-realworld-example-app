@@ -6,7 +6,7 @@ async function bootstrap() {
   const appOptions = {cors: true};
   const app = await NestFactory.create(ApplicationModule, appOptions);
   app.setGlobalPrefix('api');
-
+  //use swagger to generate api documents
   const options = new DocumentBuilder()
     .setTitle('NestJS Realworld Example App')
     .setDescription('The Realworld API description')
